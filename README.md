@@ -6,7 +6,7 @@ Script to find your rabraw22
 
 ### Webapp
 
-###### Go to this [web app](https://devanfer02.github.io/find_your_rabraw22_certi)
+#### Go to this [web app](https://devanfer02.github.io/find_your_rabraw22_certi)
 
 ### Python Script
 1. Download atau clone repo ini ke pc localmu
