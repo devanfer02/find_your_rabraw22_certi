@@ -10,6 +10,7 @@ getData()
 function search() {
     const fullname = document.getElementById('fullName').value
     const anchortag = document.getElementById('link')
+    const preview = document.getElementById('pdf_preview')
 
     if (fullname.trim() === '') {
         return;
@@ -30,6 +31,7 @@ function search() {
     
     const url_certi = object.download_url
     const firstname = fullname.split(' ')[0].toLowerCase()
+    preview.data = 'https://docs.google.com/gview?embedded=true&url=' + url_certi 
 
     anchortag.style = ''
     anchortag.href = url_certi
@@ -38,6 +40,7 @@ function search() {
 
 const inputTag = document.getElementById('fullName')
 const anchorTag = document.getElementById('link')
+const preview = document.getElementById('pdf_preview')
 
 
 inputTag.addEventListener('keypress', function(event) {
@@ -49,9 +52,11 @@ inputTag.addEventListener('keypress', function(event) {
 
 inputTag.addEventListener('input', function(event) {
     if (inputTag.value.trim() === '') {
+        preview.data = ''
         anchorTag.textContent = 'Submit Your Fullname First';
     }
     if (inputTag.value !== lastInput) {
+        preview.data = ''
         anchorTag.textContent = 'Submit Your Fullname First';
     }
 })
