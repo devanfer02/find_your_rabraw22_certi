@@ -1,10 +1,13 @@
 ## Find Your Rabraw22 Certificate!
 Script to find your rabraw22
 
-### DISCLAIMER!!!
-PROGRAM INI KHUSUS UNTUK MAHASISWA FILKOM UB 2022 DIKARENAKAN TOTAL SIZE SEMUA SERTIFIKAT KEGEDEAN UNTUK DISIMPAN KE GITHUB
+### How To Use 
 
-### How To Use
+#### Webapp
+
+    1. Go to this [web app](https://devanfer02.github.io/find_your_rabraw22_certi)
+
+#### Python Script
 1. Download atau clone repo ini ke pc localmu
     1. Jika clone, jalankan command ```git clone https://github.com/devanfer02/find_your_rabraw22_certi.git``` di terminal
     2. Jika Download, arahkan cursormu ke code, dan download zipnya, lalu ekstrak zip
