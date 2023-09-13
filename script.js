@@ -25,10 +25,11 @@ function search() {
     }
     
     const url_certi = object.download_url
+    const firstname = fullname.split(' ')[0].toLowerCase()
 
     anchortag.style = ''
     anchortag.href = url_certi
-    anchortag.textContent = "Here's your rabraw22 certificate 😊!"
+    anchortag.textContent = `Here's your rabraw22 certificate ${firstname} 😊!`
 }
 
 const inputTag = document.getElementById('fullName')
