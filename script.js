@@ -11,6 +11,10 @@ function search() {
     const fullname = document.getElementById('fullName').value
     const anchortag = document.getElementById('link')
 
+    if (fullname.trim() === '') {
+        return;
+    }
+
     const fullnameAllCaps = fullname.toUpperCase()
     lastInput = fullname
 
