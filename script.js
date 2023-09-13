@@ -12,6 +12,7 @@ function search() {
     const anchortag = document.getElementById('link')
 
     const fullnameAllCaps = fullname.toUpperCase()
+    lastInput = fullname
 
     const object = DATA.find((item) => {
         return item.name.toUpperCase().includes(fullnameAllCaps)
@@ -24,7 +25,6 @@ function search() {
     }
     
     const url_certi = object.download_url
-    lastInput = fullname
 
     anchortag.style = ''
     anchortag.href = url_certi
