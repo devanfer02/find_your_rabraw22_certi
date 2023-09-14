@@ -54,9 +54,11 @@ inputTag.addEventListener('input', function(event) {
     if (inputTag.value.trim() === '') {
         preview.data = ''
         anchorTag.textContent = 'Submit Your Fullname First';
+        anchorTag.href = '';
     }
     if (inputTag.value !== lastInput) {
         preview.data = ''
         anchorTag.textContent = 'Submit Your Fullname First';
+        anchorTag.href = '';
     }
 })
