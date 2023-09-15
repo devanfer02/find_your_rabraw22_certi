@@ -11,6 +11,3 @@ Go to this [website](https://devanfer02.github.io/find_your_rabraw22_certi)
 2. Make a new branch and develop it there
 2. Make a commit and pull request
 3. Your pull request will be reviewed first before merging to master branch
-
-## What to fix or add
-1. Sometimes the PDF viewer works, sometimes it doesnt
