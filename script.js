@@ -11,8 +11,8 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build
 async function search() {
     try {
         const DATA = await DATA_PROMISE
-        const fullname = document.getElementById('fullName').value
-        const faculty = document.getElementById('faculty').value
+        const fullname = document.getElementById('fullName').value.trim()
+        const faculty = document.getElementById('faculty').value.trim()
         const anchortag = document.getElementById('link')
     
         const fullnameAllCaps = fullname.toUpperCase()
