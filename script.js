@@ -14,6 +14,8 @@ async function search() {
         const fullname = document.getElementById('fullName').value.trim()
         const faculty = document.getElementById('faculty').value.trim()
         const anchortag = document.getElementById('link')
+
+        if (fullname === '' || faculty === '') return
     
         const fullnameAllCaps = fullname.toUpperCase()
         const facultyAllCaps = faculty.toUpperCase()
