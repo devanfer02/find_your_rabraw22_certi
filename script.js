@@ -5,10 +5,10 @@ const DATA_PROMISE = fetch('data.json').then(res => {
 })
 
 let lastInput = ''
-const pdfjsLib = window['pdfjs-dist/build/pdf'];
+const { pdfjsLib } = globalThis;
 pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.js';
 
-async function search() {
+window.search = async function() {
     try {
         const DATA = await DATA_PROMISE
         const fullname = document.getElementById('fullName').value.trim()
@@ -23,7 +23,10 @@ async function search() {
         lastInput = fullname + ' ' + faculty
     
         const object = DATA.find((item) => {
-            return item.name.toUpperCase().includes(fullnameAllCaps + ' ' + facultyAllCaps)
+            return (
+                item.name.toUpperCase().includes(fullnameAllCaps + ' ' + facultyAllCaps) || 
+                (item.name.toUpperCase().includes(fullnameAllCaps) && item.name.toUpperCase().includes(facultyAllCaps))
+            )
         })
     
         if (object === undefined) {
